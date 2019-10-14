@@ -21,3 +21,25 @@ function GotoGoogle(event){
 
 
 /* Task 4 using jQuery */
+
+$('#addText').click(function(event){
+    let para = $('<p>').text("Hello World")
+    $('#task4a').append(para);
+})
+
+//4b
+$('#changeColor1').click(function(event){
+    $('body').css('background-color', event.target.innerText.toLowerCase())
+})
+
+$('#changeColor2').click(function(event){
+    $('body').css('background-color', event.target.innerText.toLowerCase())
+})
+
+//4c
+$('#adding').click(function(event){
+    let first = $('#num1').val();
+     let second = $('#num2').val();
+     let add = Number(first) + Number(second);
+    $('#task4c').text(add);
+})
